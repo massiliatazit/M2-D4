@@ -22,6 +22,18 @@
   </head>
   <body>
    <div class="container">
+       <div class='row'>
+        <form class="table">
+            <div class="form-group ">
+                <label for="exampleFormControlSelect1">Select the number of teams</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+      
         <div class="input-group mb-2 mr-sm-2 mb-sm-0 mt-3">
           <div class="input-group-addon">
           <input type="text" class="form-control" id="name" name="Username">
@@ -32,27 +44,19 @@
         </ul>
     </div>
     <div class="mb-2 mr-sm-2 mb-sm-0 mt-3">
-        <button type="submit" class="btn btn-primary" id='add' onclick="addnames()">ADD</button>
-        <button type="submit" class="btn btn-primary" id='submit' onclick="assignteams()">SUBMIT</button>
-        <button type="reset" class="btn btn-primary" id='reset' onclick="reset()">RESET</button>
+        <button type="button" class="btn btn-primary" id='add' onclick="addnames()">ADD</button>
+        <button type="button" class="btn btn-primary" id='assign' onclick="assignteams()">ASSIGN</button>
+        <button type="button" class="btn btn-primary" id='reset' onclick="reset()">RESET</button>
     </div>
         
         </div>
-     <div class= 'select-holder mr-3'>
-        <form class="form-inline">
-            <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
-            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-              <option selected>Number of teams</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
+      
           
             <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
               <input type="checkbox" class="custom-control-input">
             </label>
           
-           
+        </div>
           </form>
      </div>
      </div>
